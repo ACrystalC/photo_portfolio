@@ -1,5 +1,8 @@
-<div id="background">
+<div id="heading">
   <h1>Portfolio</h1>
+  <%= link_to "+ New Photo", new_photo_url %>  
+</div>
+<div id="background">  
   <ul class="photo_gallery">
     <% @photos.each do |photo| %>
       <li><a href=""><%= image_tag photo.photo.url(:main) %><div><%= photo.title %></div></a></li>

@@ -2,10 +2,63 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+  font-family: "Cubano";
+  src: url(/assets/cubano/cubano-regular-webfont.ttf) format('truetype');
+}
+
+html, body, div, span, a, h1, h2, ul, li, img {
+  margin: 0; 
+  padding: 0;
+  border: 0; 
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+  
+ul {
+  list-style: none;
+}
+  
+:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration:none;
+}
+
+#heading {
+  display: block;
+  width: 1020px;
+  margin: 10px auto;
+    h1 {
+      font-family: "Cubano", "Raleway", "Helvetica-Neue";
+      display: inline-block;
+      float: left;
+      font-size: 72px;
+      width: 400px;
+    }
+    a {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      opacity: 0.4;
+      float: left;
+      display: block;
+      font-family: "Cubano", "Raleway", "Helvetica-Neue";
+      font-size: 50px;
+      color: #696969;
+    }
+    a:hover {
+      color: #383737;
+    }
+}  
+
 #background {
   width: 1020px; 
   margin: 0 auto;
-} 
+}   
+
 li {
   float:left; 
   position:relative; 
@@ -15,6 +68,7 @@ li {
   background:#fff; 
   box-shadow:0 0 5px rgba(0,0,0,.35);
 }
+
 li div {
   position:absolute;
   height:0; 
@@ -28,6 +82,7 @@ li div {
   color:#fff;
   transition:height 1s;
 }
+
 li:hover div {
   height:50px;
 }
