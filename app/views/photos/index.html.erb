@@ -1,0 +1,9 @@
+<div id="background">
+  <h1>Portfolio</h1>
+  <ul class="photo_gallery">
+    <% @photos.each do |photo| %>
+      <li><a href=""><%= image_tag photo.photo.url(:main) %><div><%= photo.title %></div></a></li>
+    <% end %>
+  </ul>
+</div>  
+
