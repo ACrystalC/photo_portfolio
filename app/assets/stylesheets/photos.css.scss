@@ -52,12 +52,31 @@ a {
     a:hover {
       color: #383737;
     }
-}  
+} 
+
+#skrollr-body {
+  width:100%; 
+  height:100%; 
+  position:fixed; 
+}
+
+#skrollr-body  div {
+  overflow:hidden; 
+  position:absolute; 
+} 
 
 #background {
   width: 1020px; 
   margin: 0 auto;
-}   
+} 
+
+#blocker {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 700px;
+  background: #fff;
+}  
 
 li {
   float:left; 
