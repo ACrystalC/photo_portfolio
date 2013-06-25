@@ -1,4 +1,4 @@
 photo_portfolio
 ===============
 
-Experimenting with HTML5 canvas and parallax
+Simple portfolio, experimenting with front-end
