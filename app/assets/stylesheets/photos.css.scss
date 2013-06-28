@@ -7,7 +7,7 @@
   src: url(/assets/cubano/cubano-regular-webfont.ttf) format('truetype');
 }
 
-html, body, div, span, a, h1, h2, ul, li, img {
+body, span, a, h1, h2, ul, li, img {
   margin: 0; 
   padding: 0;
   border: 0; 
@@ -25,14 +25,19 @@ ul {
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 #heading {
   display: block;
-  width: 1020px;
-  margin: 10px auto;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 20px 0 0 0;
+  background-color: #fff;
+  z-index: 1;
     h1 {
+      margin: 0 0 0 11%;
       font-family: "Cubano", "Raleway", "Helvetica-Neue";
       display: inline-block;
       float: left;
@@ -41,7 +46,7 @@ a {
     }
     a {
       margin-top: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
       opacity: 0.4;
       float: left;
       display: block;
@@ -65,10 +70,7 @@ a {
   position:absolute; 
 } 
 
-#background {
-  width: 1020px; 
-  margin: 0 auto;
-} 
+
 
 #blocker {
   position: absolute;
@@ -76,7 +78,11 @@ a {
   width: 100%;
   height: 700px;
   background: #fff;
-}  
+} 
+
+#background {
+  padding: 130px 10%;
+}
 
 li {
   float:left; 
@@ -89,19 +95,19 @@ li {
 }
 
 li div {
-  position:absolute;
-  height:0; 
-  width:280px;
-  background:rgba(0,0,0,.45); 
-  overflow:hidden;
-  bottom:10px; 
-  left:10px;
+  position: absolute;
+  height: 0; 
+  width: 280px;
+  background: rgba(0,0,0,.45); 
+  overflow: hidden;
+  bottom: 10px; 
+  left: 10px;
   padding: 0 10px;
-  line-height:50px;
-  color:#fff;
-  transition:height 1s;
+  line-height: 50px;
+  color: #fff;
+  transition: height 1s;
 }
 
 li:hover div {
-  height:50px;
+  height: 50px;
 }
