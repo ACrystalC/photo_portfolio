@@ -62,7 +62,7 @@ a {
 #skrollr-body {
   width:100%; 
   height:100%; 
-  position:fixed; 
+  position:absolute; 
 }
 
 #skrollr-body  div {
@@ -70,18 +70,14 @@ a {
   position:absolute; 
 } 
 
-
-
 #blocker {
-  position: absolute;
-  top: 100px;
   width: 100%;
   height: 700px;
   background: #fff;
 } 
 
 #background {
-  padding: 130px 10%;
+  padding: 500px 10%;
 }
 
 li {
